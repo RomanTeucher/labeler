@@ -18,9 +18,9 @@ def save(title, text, source):
         st.warning("Source cannot be empty")
         return
 
-    st.session_state["title"] = ""
+    #st.session_state["title"] = ""
     st.session_state["text"] = ""
-    st.session_state["source"] = ""
+    #st.session_state["source"] = ""
 
     st.session_state["data"] += [
         {"text": text, "source_document": source, "title": title}
